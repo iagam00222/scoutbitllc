@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Scoutbit LCC</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 d-none d-lg-block">
+            <div class="container px-0">
+                <div class="row gx-0 align-items-center" style="height: 45px;">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                            <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i> +917455024682</a>
+                            <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>admin@scoutbitllc.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+       <!-- Navbar & Hero Start -->
+<div class="container-fluid sticky-top px-0">
+    <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;"></div>
+    <div class="container px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4"
+             style="animation: fadeIn 1s ease-in;">
+            <a href="index.html" class="navbar-brand p-0 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="text-primary m-0"><i class="fas fa-donate me-3"></i>Scoutbit LCC</h1>
+            </a>
+            <button class="navbar-toggler wow fadeInUp" data-wow-delay="0.2s" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active wow fadeInUp" data-wow-delay="0.3s" 
+                       style="transition: all 0.3s ease;">
+                        Home
+                    </a>
+                    <a href="about.html" class="nav-item nav-link wow fadeInUp" data-wow-delay="0.4s">About</a>
+                    <a href="service.html" class="nav-item nav-link wow fadeInUp" data-wow-delay="0.5s">Careers</a>
+                    <a href="project.html" class="nav-item nav-link wow fadeInUp" data-wow-delay="0.6s">Our Value</a>
+                    <a href="contact.html" class="nav-item nav-link wow fadeInUp" data-wow-delay="0.7s">Contact</a>
+                </div>
+                <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                    <button class="btn btn-primary btn-md-square mx-2 wow fadeInUp" data-wow-delay="0.8s" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0 wow fadeInUp" data-wow-delay="0.9s">
+                        Start Scoutbit LCC
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<!-- Inline CSS for Animations -->
+<style>
+    /* Fade In Animation */
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Apply Fade In Effect on Navbar Elements */
+    .navbar, .navbar-brand, .navbar-toggler, .navbar-nav .nav-link, .dropdown-menu, .btn {
+        animation: fadeInUp 1.5s ease-in forwards;
+    }
+
+    .navbar-toggler {
+        animation-delay: 0.3s;
+    }
+
+    .navbar-nav .nav-link {
+        animation-delay: 0.5s;
+    }
+
+    .dropdown-menu {
+        animation-delay: 0.7s;
+    }
+
+    .btn {
+        animation-delay: 0.9s;
+    }
+
+    /* Hover Effect */
+    .nav-item.nav-link:hover {
+        color: #459cc4;  /* Change to a blue shade */
+        transform: scale(1.1);  /* Slightly increase the size */
+    }
+
+    /* Adding transition effect for smoothness */
+    .nav-item.nav-link {
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+</style>
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+     <!-- Carousel Start -->
+<div class="header-carousel owl-carousel">
+    <div class="header-carousel-item">
+        <div class="header-carousel-item-img-1">
+            <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+            <div class="overlay"></div> <!-- Overlay for dark background -->
+        </div>
+        <div class="carousel-caption">
+            <div class="carousel-caption-inner text-start p-3">
+                <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated">
+                    Empowering Businesses with Expert Financial Solutions
+                </h1>
+                <p class="mb-5 fs-5 fadeInUp animate__animated">
+                    We provide innovative strategies and insights to help organizations thrive in today's competitive markets.
+                </p>
+                <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated" href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="header-carousel-item mx-auto">
+        <div class="header-carousel-item-img-2">
+            <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+            <div class="overlay"></div> <!-- Overlay for dark background -->
+        </div>
+        <div class="carousel-caption">
+            <div class="carousel-caption-inner text-center p-3">
+                <h1 class="display-1 text-capitalize text-white mb-4">
+                    Your Trusted Partner for Growth and Success
+                </h1>
+                <p class="mb-5 fs-5">
+                    With years of experience, we tailor solutions that meet your unique business needs and aspirations.
+                </p>
+                <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#">Our Services</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+<!-- Inline CSS for Animations and Styling -->
+<style>
+    .header-carousel-item {
+        position: relative;
+        width: 100%;
+    }
+    
+    .header-carousel-item-img-1,
+    .header-carousel-item-img-2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Overlay for text visibility on image */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+        z-index: 1;
+    }
+
+    /* Style for the carousel caption */
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Ensure text is above the overlay */
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Carousel Caption Inner Styling */
+    .carousel-caption-inner {
+        opacity: 0;
+        animation: fadeInUp 1.5s ease-out forwards;
+    }
+
+    .carousel-caption h1,
+    .carousel-caption p,
+    .carousel-caption .btn {
+        opacity: 0;
+        animation: fadeInUp 1.5s ease-out forwards;
+    }
+
+    .carousel-caption h1 {
+        font-size: 3rem; /* Larger text similar to the screenshot */
+        font-weight: 700;
+        animation-delay: 1s;
+    }
+
+    .carousel-caption p {
+        font-size: 1.25rem; /* Slightly smaller than heading but still prominent */
+        animation-delay: 1.2s;
+    }
+
+    .carousel-caption .btn {
+        animation-delay: 1.4s;
+        background-color: #ff7f00; /* Button color similar to the screenshot */
+        border: none;
+    }
+
+    .carousel-caption .btn:hover {
+        background-color: #e67e00; /* Darken on hover */
+    }
+
+    /* FadeInUp Animation */
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Style for responsiveness */
+    @media (max-width: 768px) {
+        .carousel-caption h1 {
+            font-size: 2rem; /* Smaller font size on mobile */
+        }
+
+        .carousel-caption p {
+            font-size: 1rem;
+        }
+
+        .carousel-caption .btn {
+            font-size: 0.9rem;
+        }
+    }
+
+    /* Hide Owl Carousel left and right arrows */
+    .owl-carousel .owl-nav {
+        display: none;
+    }
+</style>
+
+<!-- Add Owl Carousel JavaScript for smooth slide transitions -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+        });
+    });
+</script>
+
+
+
+<!-- About Us Start -->
+<div class="container-fluid py-5" style="background-color: #ffffff;">
+    <div class="container py-5">
+        <!-- Text Section -->
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 text-start wow fadeInUp" data-wow-delay="0.1s">
+                <h4 style="color: #1a1a40; font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
+                    About Us
+                </h4>
+                <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">
+                    Helping Businesses Deliver Exceptional Buyer Experiences.
+                </h1>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #4a4a4a;">
+                    Scoutbit LLC is a leading innovator in strategic and self-funded engagements. With our
+                    expert team, we empower businesses by delivering top-notch solutions in derivatives, 
+                    technology, and risk management, ensuring growth and profitability for our clients.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #4a4a4a;">
+                    Our tailored approach, grounded in integrity and excellence, has helped us build long-lasting 
+                    partnerships that drive impactful outcomes.
+                </p>
+                <a href="about.html" class="btn btn-primary rounded-pill py-2 px-4" 
+                   style="font-size: 1rem; background-color: #6c63ff; border: none;">
+                    Read More
+                </a>
+            </div>
+            <!-- Image Section -->
+            <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay="0.3s">
+                <div style="position: relative; display: inline-block;">
+                    <img src="img/about-2.jpg" class="img-fluid" 
+                         style="border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                                width: 9%; height: 0%; border-radius: 50%; background-color: rgba(108, 99, 255, 0.1);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Us End -->
+
+
+
+
+
+
+
+
+
+
+     <!-- Career Section Start -->
+<div class="container-fluid py-5" style="background-color: #f8f9fa;">
+    <div class="container py-5">
+        <!-- Heading Section -->
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="display-4" style="font-weight: bold; margin-bottom: 20px; color: #1a1a40;">
+                Join Our Team at <span style="color: #364044;">Scoutbit LLC</span>
+            </h1>
+            <p class="mb-4" style="font-size: 1.2rem; line-height: 1.8; color: #4a4a4a;">
+                We’re always on the lookout for passionate problem solvers who thrive on innovation and collaboration. 
+                Be a part of a global, inclusive, and empowering workplace where your contributions truly matter.
+            </p>
+        </div>
+        <!-- Content Section -->
+        <div class="row g-5 align-items-center">
+            <!-- Image Section -->
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <img src="img/career-highlight.jpg" class="img-fluid rounded" 
+                     style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);" alt="Career Highlight">
+            </div>
+            <!-- Text Section -->
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s" style="text-align: left;">
+                <h4 style="color: #364044; text-transform: uppercase; font-weight: bold;">Careers</h4>
+                <p style="font-size: 1rem; line-height: 1.8; color: #4a4a4a; margin-bottom: 20px;">
+                    At Scoutbit LLC, our people are our greatest asset. We cultivate a culture that prioritizes 
+                    teamwork, collaboration, and professional development, offering a platform for individuals to 
+                    achieve their full potential.
+                </p>
+                <p style="font-size: 1rem; line-height: 1.8; color: #4a4a4a; margin-bottom: 20px;">
+                    By joining us, you’ll have the opportunity to make an immediate impact, drive innovation, and 
+                    work on cutting-edge projects that shape the future of the global derivatives market.
+                </p>
+                <a href="#" class="btn btn-outline-dark rounded-pill py-2 px-4" 
+                   style="font-size: 1rem;"><i class="fas fa-arrow-right"></i> Explore Careers</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Career Section End -->
+
+
+
+
+
+        <!-- Our Value Start -->
+<div class="container-fluid py-5" style="background-color: #ffffff;">
+    <div class="container py-5">
+        <!-- Heading Section -->
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="display-4" style="font-weight: bold; margin-bottom: 20px; color: #1a1a40;">
+                We’re always on the lookout for <span style="color: #364044;">passionate problem solvers.</span>
+            </h1>
+            <p class="mb-4" style="font-size: 1.2rem; line-height: 1.8; color: #4a4a4a;">
+                Our people are our greatest investment. Here, you can make an immediate and tangible impact.
+            </p>
+            <a href="#" class="btn btn-outline-dark rounded-pill py-2 px-4" style="font-size: 1rem;">
+                <i class="fas fa-arrow-right"></i> See Open Positions
+            </a>
+        </div>
+
+        <!-- Values Section -->
+        <div class="row mt-5 g-4">
+            <!-- Value 1 -->
+            <div class="col-md-3 text-center">
+                <div class="bg-light rounded shadow" style="overflow: hidden;">
+                    <img src="img/value-1.jpg" class="img-fluid w-100" alt="Think Image">
+                </div>
+                <h4 class="mt-3" style="font-weight: bold; color: #1a1a40;">THINK</h4>
+                <p style="color: #4a4a4a; font-size: 1rem;">
+                    Thoughtful, creative, curious people come up with the best solutions.
+                </p>
+            </div>
+            <!-- Value 2 -->
+            <div class="col-md-3 text-center">
+                <div class="bg-light rounded shadow" style="overflow: hidden;">
+                    <img src="img/value-2.jpg" class="img-fluid w-100" alt="Trust Image">
+                </div>
+                <h4 class="mt-3" style="font-weight: bold; color: #1a1a40;">TRUST</h4>
+                <p style="color: #4a4a4a; font-size: 1rem;">
+                    Idea sharing and collaboration is built on trust, respect, and hard work.
+                </p>
+            </div>
+            <!-- Value 3 -->
+            <div class="col-md-3 text-center">
+                <div class="bg-light rounded shadow" style="overflow: hidden;">
+                    <img src="img/value-3.jpg" class="img-fluid w-100" alt="Tinker Image">
+                </div>
+                <h4 class="mt-3" style="font-weight: bold; color: #1a1a40;">TINKER</h4>
+                <p style="color: #4a4a4a; font-size: 1rem;">
+                    The most interesting people have interesting hobbies. Tinkerers, unite.
+                </p>
+            </div>
+            <!-- Value 4 -->
+            <div class="col-md-3 text-center">
+                <div class="bg-light rounded shadow" style="overflow: hidden;">
+                    <img src="img/value-4.jpg" class="img-fluid w-100" alt="Trade Image">
+                </div>
+                <h4 class="mt-3" style="font-weight: bold; color: #1a1a40;">TRADE</h4>
+                <p style="color: #4a4a4a; font-size: 1rem;">
+                    We’re passionate about the markets and their near infinite mathematical relationships.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our Value End -->
+
+
+
+       
+
+
+        
+
+<!-- FAQ Start -->
+<div class="container-fluid faq py-5 bg-light">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <!-- FAQ Image -->
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="faq-img RotateMoveRight rounded">
+                    <img src="img/faq-img.jpg" class="img-fluid rounded w-100 shadow-sm" alt="Investment FAQs" style="object-fit: cover;">
+                    <a class="faq-btn btn btn-primary rounded-pill text-white py-3 px-5 mt-4" href="#">Read More Q & A <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+            <!-- FAQ Content -->
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s" style="text-align: left;">
+                <h6 style="color: #364044; text-transform: uppercase; font-weight: bold; letter-spacing: 1px;">FAQs</h6>
+                <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; color: #1a1a40;">Get the Answers to Your Investment Questions</h1>
+
+                <div class="accordion bg-white rounded p-4 shadow-sm" id="accordionExample">
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item border-0 mb-4">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What services does Scoutbit LLC provide?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body my-2">
+                                <h5>Comprehensive Investment Solutions</h5>
+                                <p style="color: #212529;">Scoutbit LLC specializes in global derivatives markets, offering services such as portfolio management, risk analysis, and strategic financial planning. Our expertise includes advanced financial instruments like futures, options, forwards, and swaps.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item border-0 mb-4">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How do you ensure investment security?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body my-2">
+                                <h5>Robust Risk Management</h5>
+                                <p style="color: #212529;">We adopt meticulous risk management techniques and adhere to global regulatory standards. Transparency, advanced quantitative models, and in-depth market insights ensure the safety of your investments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item border-0 mb-4">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What makes Scoutbit LLC's approach unique?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body my-2">
+                                <h5>Innovation and Adaptability</h5>
+                                <p style="color: #212529;">Our approach combines cutting-edge technology, data-driven analytics, and deep financial expertise to identify unique opportunities. This allows us to stay agile in a constantly evolving market.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item border-0 mb-0">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                How do I get started with Scoutbit LLC?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body my-2">
+                                <h5>Simple Onboarding Process</h5>
+                                <p style="color: #212529;">Getting started is easy. Contact us for a consultation, and we’ll guide you through our onboarding process, which includes defining your goals, risk profiling, and crafting a customized investment strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FAQ End -->
+
+<!-- Footer Start -->
+<div class="container-fluid my-5" style="padding-left: 0; padding-right: 0;">
+    <footer class="text-center text-lg-start text-dark" style="background-color: #dbe9f4;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4" style="background-color: #459cc4; animation: fadeIn 1s ease-in;">
+            <!-- Left -->
+            <div class="me-5">
+                <span style="color: #ffffff;">Get connected with us on social networks:</span>
+            </div>
+            <!-- Right -->
+            <div>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-google"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <!-- Section: Links -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                   <!-- Scoutbit LLC Column -->
+<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="animation: fadeInUp 1s ease-in;">
+    <!-- Logo Image -->
+    <a href="index.html" class="navbar-brand p-0">
+        <img src="img/logo.jpg" alt="Scoutbit LLC Logo" style="max-width: 200px; height: auto;">
+    </a>
+    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #f2f6f8; height: 2px" />
+    <p style="color: #4a4a4a;">We are a leading financial consultancy firm specializing in algorithmic trading and investment solutions. Our mission is to help clients navigate the financial markets with precision and integrity.</p>
+</div>
+
+
+                    <!-- Services Column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="animation: fadeInUp 1.3s ease-in;">
+                        <h6 class="text-uppercase fw-bold" style="color: #1a1a40;">Services</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #459cc4; height: 2px" />
+                        <p><a href="#!" class="text-dark">Trading Algorithms</a></p>
+                        <p><a href="#!" class="text-dark">Market Analysis</a></p>
+                        <p><a href="#!" class="text-dark">Portfolio Management</a></p>
+                        <p><a href="#!" class="text-dark">Risk Management</a></p>
+                    </div>
+
+                    <!-- Useful Links Column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="animation: fadeInUp 1.5s ease-in;">
+                        <h6 class="text-uppercase fw-bold" style="color: #1a1a40;">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #459cc4; height: 2px" />
+                        <p><a href="#!" class="text-dark">About Us</a></p>
+                        <p><a href="#!" class="text-dark">Privacy Policy</a></p>
+                        <p><a href="#!" class="text-dark">FAQs</a></p>
+                        <p><a href="#!" class="text-dark">Terms of Use</a></p>
+                    </div>
+
+                    <!-- Contact Column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4" style="animation: fadeInUp 1.7s ease-in;">
+                        <h6 class="text-uppercase fw-bold" style="color: #1a1a40;">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #459cc4; height: 2px" />
+                        <p><i class="fas fa-home me-3"></i> 1234 Wall Street, New York, NY</p>
+                        <p><i class="fas fa-envelope me-3"></i> info@scoutbit.com</p>
+                        <p><i class="fas fa-phone me-3"></i> +1 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Bottom -->
+        <div class="text-center py-3" style="background-color: #459cc4;">
+            <p class="mb-0 text-white">© 2024 Scoutbit LLC | All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+<!-- Footer End -->
+
+<!-- CSS Animations -->
+<style>
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .social-icon:hover {
+        color: #f1f1f1;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .faq-img {
+        transition: transform 0.3s ease;
+    }
+
+    .faq-img:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

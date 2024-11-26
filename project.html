@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Scoutbit LLC Where Market Intelligence Meets Precision Execution</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 d-none d-lg-block">
+            <div class="container px-0">
+                <div class="row gx-0 align-items-center" style="height: 45px;">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                            <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+971 52 883 1423</a>
+                            <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>admin@scoutbitllc.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-facebook-f text-white"></i></a>
+                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-twitter text-white"></i></a>
+                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-instagram text-white"></i></a>
+                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar & Hero Start -->
+<div class="container-fluid sticky-top px-0">
+    <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;"></div>
+    <div class="container px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4"
+             style="animation: fadeIn 1s ease-in;">
+            <a href="index.html" class="navbar-brand p-0 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="text-primary m-0"><i class="fas fa-donate me-3"></i>Scoutbit LCC</h1>
+            </a>
+            <button class="navbar-toggler wow fadeInUp" data-wow-delay="0.2s" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link wow fadeInUp our-value" data-wow-delay="0.6s">Home</a>
+                    </a>
+                    <a href="about.html" class="nav-item nav-link wow fadeInUp" data-wow-delay="0.4s">About</a>
+                    <a href="service.html" class="nav-item nav-link wow fadeInUp" data-wow-delay="0.5s">Careers</a>
+                    <a href="project.html" class="nav-item nav-link active wow fadeInUp" data-wow-delay="0.3s" 
+                       style="transition: all 0.3s ease;">
+                        Our Value
+                    </a>
+                    <a href="contact.html" class="nav-item nav-link wow fadeInUp" data-wow-delay="0.7s">Contact</a>
+                </div>
+                <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                    <button class="btn btn-primary btn-md-square mx-2 wow fadeInUp" data-wow-delay="0.8s" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0 wow fadeInUp" data-wow-delay="0.9s">
+                        Start Scoutbit LCC
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<!-- Inline CSS for Animations -->
+<style>
+    /* Fade In Animation */
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Apply Fade In Effect on Navbar Elements */
+    .navbar, .navbar-brand, .navbar-toggler, .navbar-nav .nav-link, .dropdown-menu, .btn {
+        animation: fadeInUp 1.5s ease-in forwards;
+    }
+
+    .navbar-toggler {
+        animation-delay: 0.3s;
+    }
+
+    .navbar-nav .nav-link {
+        animation-delay: 0.5s;
+    }
+
+    .dropdown-menu {
+        animation-delay: 0.7s;
+    }
+
+    .btn {
+        animation-delay: 0.9s;
+    }
+
+    /* Hover Effect */
+    .nav-item.nav-link:hover {
+        color: #459cc4;  /* Change to a blue shade */
+        transform: scale(1.1);  /* Slightly increase the size */
+    }
+
+    /* Adding transition effect for smoothness */
+    .nav-item.nav-link {
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Apply Hover Effects Specifically to the 'Our Value' Link */
+    .our-value:hover {
+        color: #459cc4;  /* Blue hover color */
+        transform: scale(1.1);  /* Slightly increase size on hover */
+    }
+
+    /* Adding Transition for the 'Our Value' Link */
+    .our-value {
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+</style>
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="bg-breadcrumb-single"></div>
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Values</h4>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                
+                    <li class="breadcrumb-item active text-primary">Our Values</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Culture & Values Section Start -->
+<div class="container">
+    <div class="row">
+        <!-- Value 1: Doing the Right Thing -->
+        <div class="col-md-3 col-sm-6">
+            <div class="serviceBox">
+                <div class="service-icon">
+                    <span><i class="fa fa-check-circle"></i></span>
+                </div>
+                <h3 class="title">We Are Committed to Doing the Right Thing</h3>
+                <p class="description">We improve the market by focusing on integrity and making decisions that benefit the long-term health of our industry.</p>
+            </div>
+        </div>
+
+        <!-- Value 2: Excellence -->
+        <div class="col-md-3 col-sm-6">
+            <div class="serviceBox cyan">
+                <div class="service-icon">
+                    <span><i class="fa fa-trophy"></i></span>
+                </div>
+                <h3 class="title">We Aim for Excellence</h3>
+                <p class="description">Our belief in continuous improvement pushes us to be our best and deliver exceptional results every day.</p>
+            </div>
+        </div>
+
+        <!-- Value 3: Collaboration -->
+        <div class="col-md-3 col-sm-6">
+            <div class="serviceBox blue">
+                <div class="service-icon">
+                    <span><i class="fa fa-users"></i></span>
+                </div>
+                <h3 class="title">We Do Our Best Work Together</h3>
+                <p class="description">Collaboration drives our success. We believe in leveraging the collective strength of diverse teams to create innovative solutions.</p>
+            </div>
+        </div>
+
+        <!-- Value 4: Challenging the Status Quo -->
+        <div class="col-md-3 col-sm-6">
+            <div class="serviceBox orange">
+                <div class="service-icon">
+                    <span><i class="fa fa-lightbulb"></i></span>
+                </div>
+                <h3 class="title">We Challenge the Status Quo</h3>
+                <p class="description">We embrace critical thought, diverse thinking, self-reflection, and open feedback to constantly evolve and stay ahead of the curve.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Culture & Values Section End -->
+
+<!-- CSS for Culture & Values Design -->
+<style>
+    /* General Styles for the Service Box */
+    .serviceBox {
+        font-family: 'Poppins', sans-serif;
+        padding: 30px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Align text to the top */
+        height: 100%; /* Allow box to expand to fill content */
+        position: relative;
+    }
+
+    /* Hover Effect for the Service Box */
+    .serviceBox:hover {
+        background: #FF5B5B; /* Change to your brand's highlight color */
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Service Icon Styles */
+    .serviceBox .service-icon {
+        color: #FF5B5B; /* Adjust based on your color */
+        font-size: 60px;
+        margin: 0 0 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Title Styles */
+    .serviceBox .title {
+        color: #333;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 27px;
+        text-transform: capitalize;
+        margin: 0 0 15px;
+        transition: all 0.3s ease-in-out;
+        flex-grow: 1; /* Ensures space between title and description */
+    }
+
+    /* Description Styles */
+    .serviceBox .description {
+        color: #777;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 0 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Specific Color Themes for Different Service Boxes */
+    .serviceBox.cyan .service-icon,
+    .serviceBox.cyan .read-more {
+        color: #36ADB3;
+    }
+
+    .serviceBox.cyan:hover {
+        background: #36ADB3;
+    }
+
+    .serviceBox.blue .service-icon,
+    .serviceBox.blue .read-more {
+        color: #172E5A;
+    }
+
+    .serviceBox.blue:hover {
+        background: #172E5A;
+    }
+
+    .serviceBox.orange .service-icon,
+    .serviceBox.orange .read-more {
+        color: #F05D0D;
+    }
+
+    .serviceBox.orange:hover {
+        background: #F05D0D;
+    }
+
+    /* Hover Effect for All Elements Inside the Service Box */
+    .serviceBox:hover .service-icon,
+    .serviceBox:hover .title {
+        color: #fff;
+    }
+
+    .serviceBox:hover .description {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Adjust padding and margins to avoid text overflow */
+    .serviceBox .description {
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media only screen and (max-width: 990px) {
+        .serviceBox {
+            margin: 10px 0;
+        }
+    }
+
+    /* Icon color for each box */
+    .serviceBox .fa {
+        font-size: 50px; /* Adjust size of the icons */
+    }
+
+</style>
+
+       <!-- FAQ Start -->
+<div class="container-fluid faq py-5 bg-light">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <!-- FAQ Image -->
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="faq-img RotateMoveRight rounded">
+                    <img src="img/faq-img.jpg" class="img-fluid rounded w-100 shadow-sm" alt="Investment FAQs" style="object-fit: cover;">
+                    <a class="faq-btn btn btn-primary rounded-pill text-white py-3 px-5 mt-4" href="#">Read More Q & A <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+            <!-- FAQ Content -->
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s" style="text-align: left;">
+                <h6 style="color: #364044; text-transform: uppercase; font-weight: bold; letter-spacing: 1px;">FAQs</h6>
+                <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; color: #1a1a40;">Get the Answers to Your Investment Questions</h1>
+
+                <div class="accordion bg-white rounded p-4 shadow-sm" id="accordionExample">
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item border-0 mb-4">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What services does Scoutbit LLC provide?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body my-2">
+                                <h5>Comprehensive Investment Solutions</h5>
+                                <p style="color: #212529;">Scoutbit LLC specializes in global derivatives markets, offering services such as portfolio management, risk analysis, and strategic financial planning. Our expertise includes advanced financial instruments like futures, options, forwards, and swaps.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item border-0 mb-4">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How do you ensure investment security?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body my-2">
+                                <h5>Robust Risk Management</h5>
+                                <p style="color: #212529;">We adopt meticulous risk management techniques and adhere to global regulatory standards. Transparency, advanced quantitative models, and in-depth market insights ensure the safety of your investments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item border-0 mb-4">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What makes Scoutbit LLC's approach unique?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body my-2">
+                                <h5>Innovation and Adaptability</h5>
+                                <p style="color: #212529;">Our approach combines cutting-edge technology, data-driven analytics, and deep financial expertise to identify unique opportunities. This allows us to stay agile in a constantly evolving market.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item border-0 mb-0">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                How do I get started with Scoutbit LLC?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body my-2">
+                                <h5>Simple Onboarding Process</h5>
+                                <p style="color: #212529;">Getting started is easy. Contact us for a consultation, and we’ll guide you through our onboarding process, which includes defining your goals, risk profiling, and crafting a customized investment strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FAQ End -->
+
+<!-- Footer Start -->
+<div class="container-fluid my-5" style="padding-left: 0; padding-right: 0;">
+    <footer class="text-center text-lg-start text-dark" style="background-color: #dbe9f4;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4" style="background-color: #459cc4; animation: fadeIn 1s ease-in;">
+            <!-- Left -->
+            <div class="me-5">
+                <span style="color: #ffffff;">Get connected with us on social networks:</span>
+            </div>
+            <!-- Right -->
+            <div>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-google"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white me-4 social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <!-- Section: Links -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <!-- Scoutbit LLC Column -->
+<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="animation: fadeInUp 1s ease-in;">
+    <!-- Logo Image -->
+    <a href="index.html" class="navbar-brand p-0">
+        <img src="img/logo.jpg" alt="Scoutbit LLC Logo" style="max-width: 200px; height: auto;">
+    </a>
+    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #f4f8fa; height: 2px" />
+    <p style="color: #4a4a4a;">We are a leading financial consultancy firm specializing in algorithmic trading and investment solutions. Our mission is to help clients navigate the financial markets with precision and integrity.</p>
+</div>
+
+
+                    <!-- Services Column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="animation: fadeInUp 1.3s ease-in;">
+                        <h6 class="text-uppercase fw-bold" style="color: #1a1a40;">Services</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #459cc4; height: 2px" />
+                        <p><a href="#!" class="text-dark">Trading Algorithms</a></p>
+                        <p><a href="#!" class="text-dark">Market Analysis</a></p>
+                        <p><a href="#!" class="text-dark">Portfolio Management</a></p>
+                        <p><a href="#!" class="text-dark">Risk Management</a></p>
+                    </div>
+
+                    <!-- Useful Links Column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="animation: fadeInUp 1.5s ease-in;">
+                        <h6 class="text-uppercase fw-bold" style="color: #1a1a40;">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #459cc4; height: 2px" />
+                        <p><a href="#!" class="text-dark">About Us</a></p>
+                        <p><a href="#!" class="text-dark">Privacy Policy</a></p>
+                        <p><a href="#!" class="text-dark">FAQs</a></p>
+                        <p><a href="#!" class="text-dark">Terms of Use</a></p>
+                    </div>
+
+                    <!-- Contact Column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4" style="animation: fadeInUp 1.7s ease-in;">
+                        <h6 class="text-uppercase fw-bold" style="color: #1a1a40;">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #459cc4; height: 2px" />
+                        <p><i class="fas fa-home me-3"></i> Office No. BS106, Level G, Block B, Shams Business Center, Sharjah Media City Free Zone, Sharjah, UAE</p>
+                        <p><i class="fas fa-envelope me-3"></i> admin@scoutbitllc.com</p>
+                        <p><i class="fas fa-phone me-3"></i>+971 52 883 1423</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Bottom -->
+        <div class="text-center py-3" style="background-color: #459cc4;">
+            <p class="mb-0 text-white">© 2024 Scoutbit LLC | All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+<!-- Footer End -->
+
+<!-- CSS Animations -->
+<style>
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .social-icon:hover {
+        color: #f1f1f1;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .faq-img {
+        transition: transform 0.3s ease;
+    }
+
+    .faq-img:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
